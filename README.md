@@ -1,5 +1,7 @@
 # ALFAcoins.com API library for Python 2/3
 
+Start accept crypto assets(bitcoin BTC, litecoin LTC, bitcoincash BCH, ethereum ETH, ripple XRP, litecointestnet LTCT) in your python application.
+
 Documentation: https://www.alfacoins.com/developers
 
 Usage example:
@@ -17,3 +19,27 @@ new_order = alfacoins.createOrder({
 print(new_order)
 print(new_order['address'])
 ```
+# Test notifications
+You can test notifications which should be sent to notificationURL without any payments.
+```
+import ALFAcoins
+
+alfacoins = ALFAcoins('apicontest', '07fc884cf02af307400a9df4f2d15490', 'aIXncDlApUS4nexB', True)
+new_order = alfacoins.createTestOrder('https://yoururl.com', 'completed', 'litecointestnet')
+print(new_order)
+```
+# API methods
+- createOrder(params_dict)
+- orderStatus(order_id)
+- createTestOrder(url, status, currency_type)
+- bitsend(params_dict)
+- bitsendStatus(bitsend_id)
+- getStats()
+- refundOrder(params_dict)
+- getFees()
+- rate(from_currency, to_currency)
+- getRates()
+- convert(from, to, amount)
+More information inside of code and on https://www.alfacoins.com/developers. Ask me any questions to issues.
+
+Thank you.
