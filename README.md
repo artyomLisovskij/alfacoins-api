@@ -1,6 +1,6 @@
 # ALFAcoins.com API library for Python 2/3
 
-Start accept crypto assets(bitcoin BTC, litecoin LTC, bitcoincash BCH, ethereum ETH, ripple XRP, litecointestnet LTCT) in your python application.
+Start accept crypto assets(bitcoin BTC, litecoin LTC, bitcoincash BCH, ethereum ETH, ripple XRP, dash DASH, litecointestnet LTCT) in your python application.
 
 Documentation: https://www.alfacoins.com/developers
 
@@ -40,6 +40,12 @@ print(new_order)
 - rate(from_currency, to_currency)
 - getRates()
 - convert(from, to, amount)
+
+
 More information inside of code and on https://www.alfacoins.com/developers. Ask me any questions to issues.
 
+# Donate me
+Buy me a coffee(ETH or tokens at 0x502372a32Ff5cf229Db185057f82da57E1DA85e2)
+
+Donate me BTC/ETH/LTC/BCH/XRP/DASH https://www.alfacoins.com/donation/lisovskij
 Thank you.
