@@ -217,7 +217,7 @@ class ALFAcoins():
             'pair': from_currency + '_'+ to_currency,
             'amount': float(amount)
         }
-        return self.Request('get', 'convert')
+        return self.Request('get', 'convert', params)
 
 def test_ALFAcoins():
     import random # for random generation of order_id only
